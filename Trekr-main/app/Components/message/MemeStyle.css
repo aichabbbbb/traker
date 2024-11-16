@@ -1,0 +1,31 @@
+/* MemeStyle.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+}
+
+.meme-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 0 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meme-container i {
+    color: #1a3e72;
+    font-size: 20px;
+}
+
+.meme-container .spacer {
+    flex-grow: 1;
+}

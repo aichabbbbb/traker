@@ -1,0 +1,28 @@
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.row .nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 17%;
+  height: 100vh;
+}
+.row .home{
+  width: 83%;
+  margin-left: 17%;
+  padding: 0px 46px 0px 46px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+@media screen and (max-width: 768px){
+  .row .nav{
+    width: 10%;
+  }
+  .row .home{
+    width: 90% ;
+    margin-left: 10%;
+  }
+}

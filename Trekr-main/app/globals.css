@@ -1,0 +1,84 @@
+:root{
+  --main-color:#0C2D57;
+  --secondary-color: #FF3D00; 
+  --third-color : #262626;
+  --gray-color : #49475A;
+  --black-color : #000;
+  --white-color : #fff;
+  --big-font-size: 32px;
+  --medium-font-size: 18px;
+  --small-font-size: 16px;
+  --big-font-weight: 700;
+  --medium-font-weight: 500;
+  --big-spacing: 24px;
+  --medium-spacing: 10px;
+  --small-spacing: 5px;
+}
+/* globals.css or styles.css */
+:root {
+  --button-padding: 0px 24px;
+  --button-radius: 8px;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--white-color);
+  font-family: 'Inter', sans-serif;
+}
+input,button{
+  border: none;
+  outline: none;
+}
+button{
+  background: none;
+}
+a{
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 30px !important; 
+  height: 30px !important; 
+  display: flex !important; 
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 10;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  display: flex !important; 
+  justify-content: center !important;
+  align-items: center !important;
+  color: #777;
+} 
+.swiper-button-next {
+  right: 10px; /* Position to the right */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Position to the left */
+}
+
+
+/* Pagination bullets */
+.swiper-pagination-bullet {
+  background-color: #fff !important; /* Bullet color */
+}
+

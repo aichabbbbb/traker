@@ -1,0 +1,113 @@
+/* General styles for the profile page container */
+.profile-page {
+    margin: 0;
+    font-family: 'Arial, sans-serif';
+    background-color: #0A2A4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the profile card */
+  .profile-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile banner */
+  .profile-banner {
+    position: relative;
+    height: 150px;
+    background-image: url('https://placehold.co/300x150');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Profile picture */
+  .profile-avatar {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+  
+  /* Profile details section */
+  .profile-details {
+    padding: 60px 20px 20px;
+  }
+  
+  .profile-details h6 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+    color: #777;
+  }
+  
+  /* Stats section */
+  .profile-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .profile-stats .stat {
+    text-align: center;
+  }
+  
+  .profile-stats .stat h6 {
+    margin: 0;
+    color: #E74C3C;
+  }
+  
+  .profile-stats .stat p {
+    margin: 0;
+    color: #777;
+  }
+  
+  /* Buttons section */
+  .profile-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .profile-buttons button {
+    border-radius: 20px;
+  }
+  
+  /* Images section */
+  .profile-images {
+    padding: 20px;
+  }
+  
+  .profile-images h6 {
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .profile-images .image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+  }
+  
+  .profile-images .image-grid .image-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+  }
+  

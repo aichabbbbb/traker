@@ -1,0 +1,211 @@
+.right_side{
+  padding: 72px 0px 0px 0px;
+  width: 35%;
+}
+.right_side .row_right_sisde{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*================
+ Search Start
+================*/
+.search_container{
+  display: flex;
+  position: relative;
+}
+.search_container .image_fly{
+  overflow: hidden;
+  position: absolute;
+  top: -55px;
+  right: 50%;
+  transform: translateX(50%) scaleX(-1);
+  z-index: -1;
+}
+.search_container .image_fly img{
+  max-width: 236px;
+  height: 150px;
+  width: 100%;
+}
+.search_container .input_search {
+  width: 100%;
+  position: relative;
+}
+.search_container .input_search input{
+  height: 48px;
+  border: 1px solid #0C2D57D4;
+  width: 100%;
+  border-radius: 8px;
+  padding-left: 35px;
+  font-size: var(--small-font-size);
+  color: var(--main-color);
+  font-weight: var(--medium-font-weight);
+}
+.search_container .search_icon{
+  position: absolute;
+  top: 24px;
+  left: 0;
+  transform: translate(50% , -50%);
+  font-size: 20px;
+  color: var(--main-color);
+}
+/*================
+ Search End
+================*/
+
+/*================
+  Suggestions Start
+================*/
+.suggestions_container{
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.suggestions_container .title p{
+  font-size: 14px;
+  font-weight: 600;
+  color: #8E8E8E;
+}
+.suggestions_container .users_suggestions{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.user_suggest{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_suggest .user_info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.user_suggest .user_info .image_profile_user{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user_suggest .user_info .image_profile_user img{
+  width: 100%;
+}
+.user_suggest .user_info .user_details{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.user_suggest .user_info .user_details h6{
+  font-size: 14px;
+  font-weight: 600;
+  color: #00376B;
+}
+.user_suggest .user_info .user_details p {
+  font-size: 11px;
+  color: #8E8E8E;
+}
+.user_suggest .suivre span{
+  font-size: 12px;
+  font-weight: 600;
+  color: #0095F6;
+  cursor: pointer;
+}
+/*================
+  Suggestions End
+================*/
+
+/*================
+  Map Start
+================*/
+.map_container{
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.map_container .first_image{
+  display: flex;
+  justify-content: right;
+  overflow: hidden;
+  width: 100%;
+  transform: rotate(-15deg);
+}
+.map_container .first_image img{
+  max-width: 96px;
+  height: 65px;
+  width: 100%;
+}
+.map_container .map_image{
+  overflow: hidden;
+}
+.map_container .map_image img{
+  width: 100%;
+}
+/*================
+  Map End
+================*/
+
+/*================
+  Bottom Start
+================*/
+.bottom_container{
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.bottom_container .description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.bottom_container .description h4{
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--main-color);
+  text-align: center;
+}
+.bottom_container .description h4 span{
+  color: var(--secondary-color);
+}
+.bottom_container .description p{
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.bottom_container .image_description{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom_container .image_description img{
+  max-width: 271px;
+  height: 163px;
+  width: 100%;
+}
+.bottom_container .area_button button{
+  height: 45px;
+  width: 221px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: var(--secondary-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--big-font-weight);
+  color: #fff;
+}
+
+@media screen and (max-width: 768px){
+  .right_side{
+    width: 0%;
+    display: none;
+  }
+}

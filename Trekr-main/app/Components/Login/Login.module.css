@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.form_container .e_image{
+  display: flex;
+  justify-content: center;
+}
+.form_container .content_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  width: 80%;
+}
+.form_container .content_container form{
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.form_container .content_container .description{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form_container .content_container .description p{
+  font-size: var(--small-font-size);
+  color: var(--gray-color);
+  font-weight: 400;
+}
+.form_container .content_container .description h2{
+  color: var(--main-color);
+  font-size: var(--big-font-size);
+  font-weight: var(--big-font-weight);
+}
+.form_container .content_container .input_container{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.form_container .content_container .input_container .input_area{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form_container .content_container .input_container .input_area label{
+  font-size: var(--small-font-size);
+  font-weight: var(--medium-font-weight);
+}
+.form_container .content_container .input_container .input_area input{
+  padding: 19.5px 20px 19.5px 20px;
+  border-radius: 6px;
+  border:  1px solid #CBCAD7;
+  color: var(--main-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--medium-font-weight);
+}
+.form_container .content_container .input_container .input_area input::placeholder{
+  color: var(--main-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--medium-font-weight);
+}
+.form_container .content_container .side_button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.form_container .content_container .side_button button{
+  height: 56px;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: var(--big-font-weight);
+  cursor: pointer;
+  width: 100%;
+}
+.form_container .content_container .side_button p:first-of-type{
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  color: var(--gray-color);
+}
+.form_container .content_container .side_button p:first-of-type span{
+  font-weight: 600;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+.form_container .content_container .side_button p:nth-of-type(2){
+  color: var(--gray-color);
+  font-size: var(--medium-font-size);
+  font-weight: var(--medium-font-weight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.form_container .content_container .side_button p:nth-of-type(2) span{
+  width: 163.5px;
+  height: 1.5px;
+  background-color: #CBCAD7;
+}
+.form_container .content_container .google_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_container .content_container .google_button button{
+  padding: 0px 24px 0px 24px;
+  border-radius: 100px;
+  background-color: #E7E8E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 342px;
+  height: 48px;
+  gap: 24px;
+}
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  width: 100%;
+  height: 1024px;
+  border-radius: 60px 0px 0px 60px;
+}
+@media screen and (max-width: 768px){
+  .container {
+    overflow: hidden;
+    justify-content: center;
+  }
+  .image-container {
+   display: none;
+  }
+  .form_container{
+    width: 100%;
+  }
+  .form_container .content_container{
+    width: 70%;
+    padding: 0;
+  }
+}

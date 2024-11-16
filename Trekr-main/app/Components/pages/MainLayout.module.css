@@ -1,0 +1,11 @@
+/* MainLayout.module.css */
+
+.container {
+  display: flex;
+}
+
+.galleryContainer {
+  flex: 1; /* Allows the gallery to take the remaining space */
+  padding: 20px; /* Add some padding around the gallery */
+  background-color: #f8f8f8; /* Light background for contrast */
+}
